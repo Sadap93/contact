@@ -1,66 +1,95 @@
+/* Components.css
+
+    Content:
+
+    Introduction: This file describe the components that make up the page. From internal layout to colors etc..
+
+        1. Navigation
+        2. Content
+            2.1. Content left
+            2.2. Content right
+                2.2.1. Input and textare design include the hoover effects.
+                2.2.2. Subscribe button design.
+        3. Footer
+*/
+
+/*1. Navigation*/
 .nav{
     background-color: #6200EA;
     height: 5rem;
 }
 
-.nav__links__container{
-padding-top: 2.0625rem;
-padding-bottom: 2rem;
-}
-
-.nav__logo{
-    height: 50px;
-    margin-top: 0.9375rem;
+    .nav__logo{
+       height: 50px;
+       margin-top: 0.9375rem;
     
-}
-.nav__links{
-    margin-right: 3.75rem;
-    letter-spacing: 0.15rem;
-    color: #F4F3F5;
-    padding-bottom: 1.75rem;
-}
-.nav__links:hover{
-    color: #FFFFFF;
-    border-bottom: 4px solid #FFFFFF;
-}
-.nav__links:last-child{
-    margin-right: 0;
-}
+    }
+    .nav__links__container{
+        padding-top: 2.0625rem;
+        padding-bottom: 2rem;
+    }
 
+        .nav__links{
+            margin-right: 3.75rem;
+            letter-spacing: 0.15rem;
+            color: #F4F3F5;
+            padding-bottom: 1.75rem;
+        }
+
+        .nav__links:hover{
+            color: #FFFFFF;
+            border-bottom: 4px solid #FFFFFF;
+        }
+
+        .nav__links:last-child{
+            margin-right: 0;
+        }
+
+
+
+/*2. Content*/
 .content__left, .content__right{
     background-color: #ffffff;
     border-radius: 0.9375rem;
     height: 40rem;
 }
 
+
+/* 2.1. Content left */
 .iframe__wrapper{
     margin: 3.75rem 3.75rem 1.875rem 3.75rem;
 }
+
 .contact{
     margin: 0 3.75rem 5.75rem 3.75rem;
     text-align: left;
 }
-.contact__text{
-    color: #6200EA;
-    margin-bottom: 0.625rem;
-}
-.contact__address{
-    margin-bottom: 1.875rem;
-    line-height: 1.25rem;
-    font-size: 0.875rem;
-}
-.contact__logos{
-    color: #6200EA;
-    margin-top: 1.25rem;
-    margin-right: 0.635rem;
-}
+
+    .contact__text{
+        color: #6200EA;
+        margin-bottom: 0.625rem;
+    }
+
+    .contact__address{
+        margin-bottom: 1.875rem;
+        line-height: 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    .contact__logos{
+        color: #6200EA;
+        margin-top: 1.25rem;
+        margin-right: 0.635rem;
+    }
 
 
+/* 2.2. Content right */
 .content__right__text{
     margin: 0 3.75rem 1.25rem 3.75rem;
     font-size: 1.25rem;
     line-height: 1.875rem;
 }
+/* 2.2.1. Input and textare design include the hoover effects. */
 input{
     height: 3.125rem;
 }
@@ -75,17 +104,18 @@ input, textarea{
     outline: none;
     border: 0;
 }
-input:focus, textarea:focus{
-    
-    border-bottom: 0.1875rem solid #6200EA;
-}
+    input:focus, textarea:focus{
+        
+        border-bottom: 0.1875rem solid #6200EA;
+    }
 
-input::placeholder, textarea::placeholder{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.875rem;
-    padding-left: 1.5rem;
-}
+    input::placeholder, textarea::placeholder{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.875rem;
+        padding-left: 1.5rem;
+    }
 
+/* 2.2.2. Subscribe button design. */
 .button{
     display: inline-block;
     text-align: center;
@@ -99,6 +129,9 @@ input::placeholder, textarea::placeholder{
     margin: 1.25rem 3.75rem auto 3.75rem;
     letter-spacing: 0.15rem;
 }
+
+
+/* 3. Footer */
 footer{
     text-align: center;
     height: 6.255rem;
@@ -109,6 +142,6 @@ footer{
     
 }
 
-span{
-    color: #6200EA;
-}
+    span{
+        color: #6200EA;
+    }
